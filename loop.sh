@@ -1,6 +1,5 @@
 #!/bin/sh
 
-#source /config.sh
 while true
 do
 

@@ -1,0 +1,12 @@
+version: '2'
+services:
+  dyn-dns-updater:
+    image: bcaron/dyn-dns-updater
+    container_name: dyn-dns-updater
+    environment:
+        - TOKEN=SECRET
+        - DOMAIN=domain.tld
+        - RECORD=home
+        - RECORDTYPE=A
+        - SLEEP=600
+

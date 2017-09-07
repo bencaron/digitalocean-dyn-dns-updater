@@ -5,7 +5,7 @@ all: gitupdate build
 	echo all
 
 build:
-	docker build -t bencaron/digital-ocean-dyndns-updater .
+	docker build -t bcaron/digitalocean-dyn-dns-updater .
 
 gitupdate:
 	cd vendor/Digital-Ocean-Dynamic-DNS-Updater
@@ -14,5 +14,5 @@ gitupdate:
 gitclone:
 	git clone https://github.com/bensquire/Digital-Ocean-Dynamic-DNS-Updater vendor/Digital-Ocean-Dynamic-DNS-Updater
 
-run:
-	docker run -it --rm -v bencaron/digital-ocean-dyndns-updater 
+test:
+	docker run -it --rm bcaron/digitalocean-dyn-dns-updater 
